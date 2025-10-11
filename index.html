@@ -44,10 +44,10 @@
     <!-- Define copyPassword() in the head to ensure it's available -->
     <script>
         function copyPassword() {
-            console.log("AMK2025 clicked! Attempting to copy...");
+            console.log("BETA2025 clicked! Attempting to copy...");
             try {
-                navigator.clipboard.writeText("AMK2025").then(() => {
-                    console.log("Successfully copied AMK2025 to clipboard");
+                navigator.clipboard.writeText("BETA2025").then(() => {
+                    console.log("Successfully copied BETA2025 to clipboard");
                     const copiedMessage = document.querySelector(".copied-message");
                     if (copiedMessage) {
                         copiedMessage.style.display = "block";
@@ -61,11 +61,11 @@
                     }
                 }).catch(err => {
                     console.error("Failed to copy: ", err);
-                    alert("Failed to copy password. Please copy manually: AMK2025");
+                    alert("Failed to copy password. Please copy manually: BETA2025");
                 });
             } catch (err) {
                 console.error("Clipboard API not supported: ", err);
-                alert("Clipboard API not supported. Please copy manually: AMK2025");
+                alert("Clipboard API not supported. Please copy manually: BETA2025");
             }
         }
 
@@ -787,7 +787,7 @@ function getOperatingSystem() {
             <strong>Enter the Password (If Prompted)</strong><br>
             If the .zip file asks for a password, use: 
             <span class="copy-text" onclick="copyPassword()" style="cursor: pointer; font-weight: bold; color: #f5a623; background-color: #333; padding: 4px 10px; border-radius: 5px; border: 1px solid #f5a623; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); position: relative;">
-                AMK2025
+                BETA2025
                 <span class="copied-message" style="display: none; position: absolute; top: -30px; left: 50%; transform: translateX(-50%); background: #f5a623; color: #1A1A1A; padding: 5px 10px; border-radius: 5px; font-size: 12px; opacity: 0; transition: opacity 0.3s ease;">
                     Copied!
                 </span>
